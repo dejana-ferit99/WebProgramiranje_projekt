@@ -1,0 +1,509 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+p {
+    margin: 0 0 6px;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link {
+    color: black;
+}
+
+.link--logout {
+    color: white;
+}
+
+.layout--2columns {
+    display: flex;
+    width: 60%;
+}
+
+.layout--2columns.full-width {
+    width: 100%;
+}
+
+.layout--2columns .column {
+    width: 40%;
+}
+
+.layout--2columns .column.narrow {
+    width: 20%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+}
+
+.header__name{
+    text-align: center;
+    padding: 1em;
+    color: #0c0603;
+    background-color: #E2643A;
+}
+
+.header{
+    padding: 1em;
+    color: #0c0603;
+    background-color: #cc6c48;
+}
+
+.company-main{
+    float: left;
+    width: 100%;
+}
+
+.company-main__loginpage{
+    color: #33180e;
+    text-align:left;
+}
+
+.main_columnright {
+    padding: 2em;
+    width: 100%
+}
+
+.text-style--bold {
+    font-weight: bold;
+}
+
+select,
+textarea,
+input[type=text],
+input[type=date],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 8px;
+    display: inline-block;
+    border: 1px solid #d58668;
+    box-sizing: border-box;
+    background: white;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.company-main__loginpage button{
+    border: 1px solid #d58668;
+    background-color: #f5e2db;
+    color: #33180e;
+}
+
+.main__columns{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.main__columnright{
+    flex: 1 1 75%;
+    padding: 2em 1em;
+    text-align: left;
+}
+
+.company-main__columnright{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.company-main__column{
+    flex: 75%;
+    background-color: #faf2ef;
+    color: #33180e;
+}
+
+.company-main__column_employepicture{
+    text-align:left;
+}
+
+.company-main__column_employeinformation{
+    padding: 0 2rem;
+    width: 70%;
+}
+
+.form__list li {
+    margin-bottom: 1em;
+}
+
+.footer {
+    display: flex;
+    padding: 1em;
+    background-color: #E2643A;
+    margin-top: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login-form__wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.alert {
+    display: block;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid;
+}
+
+.alert.alert-danger {
+    border-color: darkred;
+    background-color: #f42c52
+}
+
+.invalid-feedback {
+    color: red;
+    font-weight: bold;
+}
+
+.button--primary {
+    padding: 0.5em 2em;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    background: #e10811;
+    border: 1px solid #e10811;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.2s ease-in-out background-color;
+}
+
+.button--primary:hover {
+    background-color: rgba(255,8,17,0.5);
+    text-decoration: none;
+}
+
+.button--secondary {
+    padding: 0.5em 2em;
+    display: block;
+    text-align: center;
+    margin-bottom:10px;
+    white-space: nowrap;
+    background: transparent;
+    border: 1px solid #d58668;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.2s ease-in-out background-color;
+}
+
+.button--secondary:hover {
+    background-color: rgba(0,0,0,0.25);
+    text-decoration: none;
+}
+
+.employe_picture {
+    display: block;
+    height: auto;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.header__name img{
+    width: 3.5em;
+}
+
+.calendar__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-list__table {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.task-list__table th,
+.task-list__table td {
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.task-list__table th {
+    border-bottom: 1px solid black;
+    font-size: 12px;
+}
+
+.task-list__table td {
+    border-bottom: 1px solid black;
+    color:#863f25;
+}
+
+.task-list__table.completed {
+    margin-bottom: 0;
+}
+
+.task-comment {
+    max-height: 50px;
+}
+
+.back-container {
+    padding: 1em 0;
+}
+
+.employee-info__list {
+    margin-bottom: 2em;
+}
+
+.employee-info__list li {
+    margin-bottom: 10px;
+}
+
+.name-of-employee__list li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.name-of-employee__list label {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.header__task{
+    color: #f5e2db;
+    background-color: #cc6c48;
+}
+
+.main__task button{
+    cursor: pointer;
+    border: 1px solid  #d58668;
+    background-color: #f5e2db;
+    color: #33180e;
+    padding: 6px 12px;
+    margin-top: 12px;
+}
+
+.create-task__form {
+    text-align: left;
+}
+
+.create-task__date {
+    margin-bottom: 18px;
+}
+
+.close__wrapper {
+    text-align: right;
+}
+
+.nav-open body {
+    overflow: hidden;
+}
+
+.form__task-comment {
+    margin-bottom: 0;
+}
+
+.form__task-comment button {
+    display: block;
+    width: 100%;
+}
+
+.main__task .canvas__close{
+    background-color: white;
+    margin-left: unset;
+}
+
+textarea{
+    width: 360px;
+    height: 42px;
+}
+
+.main__task .task__button{
+    background-color: white;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee-list {
+    padding: 0 1em 1em;
+    display: none;
+}
+
+.employee-list.active {
+    display: block;
+}
+
+.employee-list__title {
+    margin-bottom: 0.5em;
+}
+
+.employee-list li:not(:first-of-type) {
+    margin-bottom: 0.3em;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition-duration: 10s;
+}
+
+.modal.show-modal {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    max-width: 600px;
+}
+
+.modal-content div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.modal-content div h2{
+    display: block;
+    width: 20%;
+}
+.cartTitle{
+    font-size: 30px;
+}
+.modal-content div p{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+.task-form{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+}
+h1{
+    text-align-last: center;  
+}
+#submit-button{
+    align-self: center;
+}
+.time-input{
+    width: 80px;
+    height: 42px;
+    border: 1px solid #d58668;
+}
+
+.button--second{
+   color: red;
+}
+.button--first{
+    padding: 0.5em 2em;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    background: #e10811;
+    border: 1px solid #e10811;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.2s ease-in-out background-color;
+}
+
+@media screen and (max-width: 600px) {
+    .task-form {
+        display: inline-block;
+    }
+    .layout--2columns .column{
+        width: 30vw;
+        height: 70vw;
+    }
+    .employee-info__list li{
+        font-size: 4vw;
+    }
+    a.button--secondary{
+        font-size: 10px;
+    }
+    .button--secondary{
+    display: inline-table;
+    }
+    .task-list__table{
+
+    }
+    .section {
+        display: grid;
+    } 
+  }
